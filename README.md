@@ -12,7 +12,7 @@ cd ~/.vim_runtime
 git pull --rebase
 ```
 
-## Included plugin
+## Included plugins
 * [bufexplorer.zip](https://github.com/vim-scripts/bufexplorer.zip): Quickly and easily switch between buffers. This plugin can be opened with <leader+o>
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file, buffer, mru and tag finder. It's mapped to `<Ctrl+F>`. `<leader+d>`can also be used to toggle buffer tags from current file.
 * [lightline.vim](https://github.com/itchyny/lightline.vim): A light and configurable statusline/tabline for Vim
@@ -25,3 +25,6 @@ git pull --rebase
 ## Key Mappings
 
 The [leader](http://learnvimscriptthehardway.stevelosh.com/chapters/06.html#leader) is `,`, so whenever you see `<leader>` it means `,`.
+
+## License
+[MIT License](https://github.com/pyericz/vimrc/blob/master/LICENSE)
