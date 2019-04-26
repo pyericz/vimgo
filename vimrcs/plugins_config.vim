@@ -3,6 +3,7 @@
 """"""""""""""""""""""""""""""
 let s:vim_runtime = expand('<sfile>:p:h')."/.."
 call pathogen#infect(s:vim_runtime.'/bundle/{}')
+call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
 call pathogen#helptags()
 
 
@@ -42,7 +43,7 @@ let g:ctrlp_buftag_types = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden=0
-let NERDTreeIgnore = ['\.pyc$', '__pycache__']
+let NERDTreeIgnore = ['\.pyc$', '__pycache__', '\.swp']
 let g:NERDTreeWinSize=35
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
