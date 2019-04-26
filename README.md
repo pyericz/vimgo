@@ -15,7 +15,7 @@ cd ~/.vim_runtime && sh install.sh
 * [NERD Tree](https://github.com/scrooloose/nerdtree): A file system explorer for the Vim editor. Using this plugin, users can visually browse complex directory hierarchies, quickly open files for reading or editing, and perform basic file system operations. Toggle on with `<leader+nn>`.
 * [ale](https://github.com/w0rp/ale): Syntax and lint checking for vim (async).
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out.  Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion. `gcu` uncomments a set of adjacent commented lines.
-
+* [far.vim](https://github.com/brooth/far.vim): Far.vim makes it easier to find and replace text through multiple files. It's inspired by fancy IDEs, like IntelliJ and Eclipse, that provide cozy tools for such tasks.
 
 ## Key Mappings
 

@@ -11,9 +11,14 @@
 [submodule "bundle/bufexplorer.zip"]
 	path = bundle/bufexplorer.zip
 	url = https://github.com/vim-scripts/bufexplorer.zip.git
+    ignore = untracked
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/w0rp/ale.git
 [submodule "bundle/commentary"]
 	path = bundle/commentary
 	url = https://tpope.io/vim/commentary.git
+[submodule "bundle/far.vim"]
+	path = bundle/far.vim
+	url = https://github.com/brooth/far.vim.git
+    ignore = dirty

@@ -65,6 +65,10 @@ set ffs=unix,dos,mac
 " Highlight search results
 set hlsearch
 
+" Improve the scrolling performance
+set lazyredraw
+set regexpengine=1
+
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
 
