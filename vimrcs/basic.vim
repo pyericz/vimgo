@@ -4,7 +4,11 @@
 " Sets how many lines of history VIM has to remember
 set history=500
 
+" show line number
 set nu
+
+" Set utf8 encoding
+set encoding=utf8
 
 " Enable filetype plugins
 filetype plugin on
@@ -42,22 +46,24 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
+    colorscheme peaksea
 catch
 endtry
 
 set background=dark
-
-" Set extra options when running in GUI mode
-if has("gui_running")
-    set guioptions-=T
-    set guioptions-=e
-    set t_Co=256
-    set guitablabel=%M\ %t
-endif
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => user interface 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Highlight search results
+set hlsearch
+
+
+
