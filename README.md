@@ -1,5 +1,5 @@
 # vimrc
-An alternative vim configuration that I used in daily coding. The design philosophy is motivated by https://github.com/amix/vimrc.
+An alternative vim configuration that I used in daily coding. The design philosophy is inspired by https://github.com/amix/vimrc.
 
 ## Install
 ```
