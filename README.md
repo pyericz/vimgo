@@ -7,12 +7,6 @@ git clone --recursive https://github.com/pyericz/vimrc.git ~/.vim_runtime
 cd ~/.vim_runtime && sh install.sh
 ```
 
-## Update
-```
-cd ~/.vim_runtime
-git pull --rebase
-```
-
 ## Included plugins
 * [pathogen.vim](https://github.com/tpope/vim-pathogen): Manage vim runtimepath.
 * [bufexplorer.zip](https://github.com/vim-scripts/bufexplorer.zip): Easily switch between buffers. Can be opened with `<leader+o>`.
