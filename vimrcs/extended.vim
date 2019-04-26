@@ -17,4 +17,7 @@ if has("gui_running")
     colorscheme peaksea 
 endif
 
-
+" Properly disable sound on errors on MacVim
+if has("gui_macvim")
+    autocmd GUIEnter * set vb t_vb=
+endif
