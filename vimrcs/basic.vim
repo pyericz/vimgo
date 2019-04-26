@@ -46,7 +46,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme peaksea
+    colorscheme wombat256mod
 catch
 endtry
 
