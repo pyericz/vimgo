@@ -11,3 +11,6 @@ cd ~/.vim_runtime && sh install.sh
 cd ~/.vim_runtime
 git pull --rebase
 ```
+
+## included plugin
+- [bufexplorer.zip](https://github.com/vim-scripts/bufexplorer.zip): Quickly and easily switch between buffers. This plugin can be opened with <leader+o>
