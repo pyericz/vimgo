@@ -2,7 +2,7 @@
 
 ## install
 ```
-git clone https://github.com/pyericz/vimrc.git ~/.vim_runtime
+git clone --depth=1 https://github.com/pyericz/vimrc.git ~/.vim_runtime
 cd ~/.vim_runtime && sh install.sh
 ```
 
