@@ -65,5 +65,6 @@ set ffs=unix,dos,mac
 " Highlight search results
 set hlsearch
 
-
+" Disable highlight when <leader><cr> is pressed
+map <silent> <leader><cr> :noh<cr>
 
