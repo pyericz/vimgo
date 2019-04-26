@@ -1,4 +1,6 @@
 #!/bin/sh
+echo 'Installing...'
+
 set -e
 cd ~/.vim_runtime
 echo 'set runtimepath+=~/.vim_runtime
