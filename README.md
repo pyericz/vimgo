@@ -24,7 +24,7 @@ git pull --rebase
 
 ## Key Mappings
 
-The [leader](http://learnvimscriptthehardway.stevelosh.com/chapters/06.html#leader) is `,`, so whenever you see `<leader>` it means `,`.
+The [leader](http://learnvimscriptthehardway.stevelosh.com/chapters/06.html#leader) key is map to `,`, so whenever you see `<leader>` it means `,`.
 
 ## License
 [MIT License](https://github.com/pyericz/vimrc/blob/master/LICENSE)
