@@ -29,6 +29,11 @@ map <space> /
 map <c-space> ?
 ```
 
+Disable highlight when `<leader><cr>` is pressed
+```
+map <silent> <leader><cr> :noh<cr>
+```
+
 Smart way to move between windows
 ```
 map <C-j> <C-W>j
@@ -47,10 +52,5 @@ map <leader>th :tabprevious<cr>
 map <leader>tl :tabnext<cr> 
 ```
 
-Disable highlight when `<leader><cr>` is pressed
-```
-map <silent> <leader><cr> :noh<cr>
-```
-  
 ## License
 [MIT License](https://github.com/pyericz/vimrc/blob/master/LICENSE)
