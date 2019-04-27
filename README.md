@@ -52,5 +52,10 @@ map <leader>th :tabprevious<cr>
 map <leader>tl :tabnext<cr> 
 ```
 
+Switch CWD to the directory of the open buffer
+```
+map <leader>cd :cd %:p:h<cr>:pwd<cr>
+```
+
 ## License
 [MIT License](https://github.com/pyericz/vimrc/blob/master/LICENSE)
