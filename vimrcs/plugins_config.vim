@@ -41,10 +41,12 @@ let g:ctrlp_buftag_types = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:NERDTreeWinPos = "right"
+" let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden=0
-let NERDTreeIgnore = ['\.pyc$', '__pycache__', '\.swp']
+let NERDTreeIgnore = ['\.pyc$', '__pycache__', '\.swp', 'node_modules']
 let g:NERDTreeWinSize=35
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
