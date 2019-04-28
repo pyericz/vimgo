@@ -56,7 +56,7 @@ map <leader>th :tabprevious<cr>
 map <leader>tl :tabnext<cr> 
 ```
 
-Switch CWD to the directory of the open buffer
+Switch [CWD](http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file) to the directory of the open buffer
 ```
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 ```
