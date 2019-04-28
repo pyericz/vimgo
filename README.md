@@ -74,7 +74,6 @@ let g:ctrlp_map = '<c-f>'
 map <leader>j :CtrlP<cr>
 map <c-b> :CtrlPBuffer<cr>
 map <leader>d :CtrlPBufTag<cr>
-
 ```
 
 * NERDTree
