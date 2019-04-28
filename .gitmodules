@@ -22,3 +22,6 @@
 	path = bundle/far.vim
 	url = https://github.com/brooth/far.vim.git
     ignore = dirty
+[submodule "bundle/vim-multiple-cursors"]
+	path = bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors

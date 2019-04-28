@@ -16,6 +16,7 @@ cd ~/.vim_runtime && sh install.sh
 * [ale](https://github.com/w0rp/ale): Syntax and lint checking for vim (async).
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out.  Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion. `gcu` uncomments a set of adjacent commented lines.
 * [far.vim](https://github.com/brooth/far.vim): Easier to find and replace text through multiple files. 
+* [vim-multi-cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections.
 
 ## Key Mappings
 

@@ -67,3 +67,18 @@ let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 1
 let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-multiple-cursors
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" let g:multi_cursor_use_default_mapping=0
+" 
+" " Default mapping
+" let g:multi_cursor_start_word_key      = '<C-s>'
+" let g:multi_cursor_select_all_word_key = '<A-s>'
+" let g:multi_cursor_start_key           = 'g<C-s>'
+" let g:multi_cursor_select_all_key      = 'g<A-s>'
+" let g:multi_cursor_next_key            = '<C-s>'
+" let g:multi_cursor_prev_key            = '<C-p>'
+" let g:multi_cursor_skip_key            = '<C-x>'
+" let g:multi_cursor_quit_key            = '<Esc>'
