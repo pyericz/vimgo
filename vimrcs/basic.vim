@@ -95,6 +95,4 @@ set formatoptions-=t " do not automatically wrap text when typing
 map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove 
-map <leader>th :tabprevious<cr>
-map <leader>tl :tabnext<cr> 
+map <leader>tm :tabmove
