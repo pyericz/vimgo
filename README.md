@@ -22,9 +22,8 @@ git pull --recurse-submodules
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out.  Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion. `gcu` uncomments a set of adjacent commented lines.
 * [far.vim](https://github.com/brooth/far.vim): Easier to find and replace text through multiple files. 
 * [vim-multi-cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections.
+* [vim-polyglot](https://github.com/sheerun/vim-polyglot): A collection of language packs for Vim.
 
-## Included Modes
-* [vim-go](https://github.com/fatih/vim-go)
 
 ## Key Mappings
 
