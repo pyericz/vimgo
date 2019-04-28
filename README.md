@@ -18,6 +18,9 @@ cd ~/.vim_runtime && sh install.sh
 * [far.vim](https://github.com/brooth/far.vim): Easier to find and replace text through multiple files. 
 * [vim-multi-cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections.
 
+## Included Modes
+* [vim-go](https://github.com/fatih/vim-go)
+
 ## Key Mappings
 
 The [leader](http://learnvimscriptthehardway.stevelosh.com/chapters/06.html#leader) key `<leader>` is map to `,`.
