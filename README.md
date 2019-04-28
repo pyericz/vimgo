@@ -23,6 +23,7 @@ git pull --recurse-submodules
 * [far.vim](https://github.com/brooth/far.vim): Easier to find and replace text through multiple files. 
 * [vim-multi-cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections.
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot): A collection of language packs for Vim.
+* [vim-gitgutter](https://github.com/airblade/vim-gitgutter): Show a git diff in the 'gutter' (sign column). It shows which lines have been added, modified, or removed. You can also preview, stage, and undo individual hunks. The plugin also provides a hunk text object.
 
 
 ## Key Mappings
@@ -49,7 +50,7 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 ```
-  
+
 Useful mappings for managing tabs
 ```
 map <leader>tn :tabnew<cr>
