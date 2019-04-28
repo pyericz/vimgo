@@ -25,7 +25,7 @@ cd ~/.vim_runtime && sh install.sh
 
 The [leader](http://learnvimscriptthehardway.stevelosh.com/chapters/06.html#leader) key `<leader>` is map to `,`.
 
-### Normal mode mappings
+### Normal Mode Mappings
 
 Map `<Space>` to `/` (search) and `Ctrl-<Space>` to `?` (backwards search)
 ```
@@ -59,6 +59,29 @@ map <leader>tl :tabnext<cr>
 Switch CWD to the directory of the open buffer
 ```
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
+```
+
+### Plugin Mappings
+
+* BufExplorer
+```
+map <leader>o :BufExplorer<cr>
+```
+
+* CTRL-P
+```
+let g:ctrlp_map = '<c-f>'
+map <leader>j :CtrlP<cr>
+map <c-b> :CtrlPBuffer<cr>
+map <leader>d :CtrlPBufTag<cr>
+
+```
+
+* NERDTree
+```
+map <leader>nn :NERDTreeToggle<cr>
+map <leader>nb :NERDTreeFromBookmark<Space>
+map <leader>nf :NERDTreeFind<cr>
 ```
 
 ## License
