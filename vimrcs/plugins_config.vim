@@ -82,3 +82,12 @@ let g:ale_fix_on_save = 1
 " let g:multi_cursor_prev_key            = '<C-p>'
 " let g:multi_cursor_skip_key            = '<C-x>'
 " let g:multi_cursor_quit_key            = '<Esc>'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => GitGutter
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>gg :GitGutterToggle<cr>
+map <leader>gh :GitGutterLineHighlightsToggle<cr>
+map <leader>gs :GitGutterSignsToggle<cr>
+map <leader>gb :GitGutterBufferToggle<cr>
