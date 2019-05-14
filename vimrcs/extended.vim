@@ -14,10 +14,10 @@ if has("gui_running")
     set guioptions-=e
     set t_Co=256
     set guitablabel=%M\ %t
-    colorscheme peaksea 
-    set fillchars=vert:│
-    hi VertSplit ctermbg=NONE guibg=NONE
 endif
+
+" hide ~ symbol at the end of buffer
+hi EndOfBuffer guifg=bg
 
 " Properly disable sound on errors on MacVim
 if has("gui_macvim")
