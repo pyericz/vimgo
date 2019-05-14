@@ -13,4 +13,6 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry' > ~/.vimrc
 
+vim +PlugInstall +qall
+
 echo 'Completed! Enjoy!'

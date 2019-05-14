@@ -1,3 +1,29 @@
+"""""""""""""""""""""""""""""
+" => Plug
+"""""""""""""""""""""""""""""
+call plug#begin('~/.vim_runtime/bundle')
+
+Plug 'mhartington/oceanic-next'
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
+"""""""""""""""""""""""""""""
+" => Theme
+"""""""""""""""""""""""""""""
+ syntax enable
+" for vim 7
+ set t_Co=256
+
+" for vim 8
+ if (has("termguicolors"))
+  set termguicolors
+ endif
+
+silent! colorscheme gruvbox
+set background=dark
+set fillchars=vert:│
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -42,22 +68,6 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
-
-" Enable 256 colors palette in Gnome Terminal
-if $COLORTERM == 'gnome-terminal'
-    set t_Co=256
-endif
-
-try
-    colorscheme peaksea
-catch
-endtry
-
-set background=dark
-
-" Set vertical seporator style 
-set fillchars=vert:│
-hi VertSplit ctermbg=NONE guibg=NONE
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
