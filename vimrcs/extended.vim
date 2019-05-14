@@ -15,6 +15,8 @@ if has("gui_running")
     set t_Co=256
     set guitablabel=%M\ %t
     colorscheme peaksea 
+    set fillchars=vert:│
+    hi VertSplit ctermbg=NONE guibg=NONE
 endif
 
 " Properly disable sound on errors on MacVim

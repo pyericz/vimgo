@@ -55,6 +55,10 @@ endtry
 
 set background=dark
 
+" Set vertical seporator style 
+set fillchars=vert:│
+hi VertSplit ctermbg=NONE guibg=NONE
+
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
