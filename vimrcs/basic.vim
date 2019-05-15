@@ -7,7 +7,6 @@ call plug#begin('~/.vim_runtime/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
-" Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/bufexplorer.zip'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-commentary'
@@ -26,14 +25,14 @@ call plug#end()
 """""""""""""""""""""""""""""
 " => Theme
 """""""""""""""""""""""""""""
- syntax enable
+syntax enable
 " for vim 7
- set t_Co=256
+set t_Co=256
 
 " for vim 8
- if (has("termguicolors"))
+if (has("termguicolors"))
   set termguicolors
- endif
+endif
 
 silent! colorscheme gruvbox
 set background=dark
@@ -101,7 +100,7 @@ set nowb
 set noswapfile
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => user interface 
+" => user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Highlight search results
 set hlsearch
@@ -142,6 +141,8 @@ map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
 
+" remove trailing space
+map <leader>ts :%s/\s\+$//e<cr>:noh<cr>:w<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => netrw
