@@ -4,7 +4,12 @@ An alternative vim configuration that I used in daily coding.
 ## Install
 ```
 git clone https://github.com/pyericz/vimrc.git ~/.vim_runtime
-cd ~/.vim_runtime && sh install.sh
+cd ~/.vim_runtime && ./install.sh
+```
+
+## Install Powerline Fonts
+```
+cd ~/.vim_runtime && ./install_fonts.sh
 ```
 
 ## Included Plugins
