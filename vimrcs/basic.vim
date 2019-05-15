@@ -1,10 +1,19 @@
 """""""""""""""""""""""""""""
 " => Plug
 """""""""""""""""""""""""""""
-call plug#begin('~/.vim_runtime/bundle')
+call plug#begin('~/.vim_runtime/plug')
 
-Plug 'mhartington/oceanic-next'
 Plug 'morhetz/gruvbox'
+Plug 'scrooloose/nerdtree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'vim-scripts/bufexplorer.zip'
+Plug 'w0rp/ale'
+Plug 'tpope/vim-commentary'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'sheerun/vim-polyglot'
+Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 

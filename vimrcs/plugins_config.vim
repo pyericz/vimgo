@@ -19,12 +19,12 @@ map <leader>o :BufExplorer<cr>
 """"""""""""""""""""""""""""""
 " => CTRL-P
 """"""""""""""""""""""""""""""
-let g:ctrlp_working_path_mode = 0
-
-let g:ctrlp_map = '<c-f>'
-map <leader>j :CtrlP<cr>
-map <c-b> :CtrlPBuffer<cr>
-map <leader>d :CtrlPBufTag<cr>
+" let g:ctrlp_working_path_mode = 0
+" 
+" let g:ctrlp_map = '<c-f>'
+" map <leader>j :CtrlP<cr>
+" map <c-b> :CtrlPBuffer<cr>
+" map <leader>d :CtrlPBufTag<cr>
 
 let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
@@ -91,3 +91,28 @@ map <leader>gg :GitGutterToggle<cr>
 map <leader>gh :GitGutterLineHighlightsToggle<cr>
 map <leader>gs :GitGutterSignsToggle<cr>
 map <leader>gb :GitGutterBufferToggle<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => FZF 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" let g:fzf_layout = { 'down': '20%' }
+let g:fzf_layout = { 'window': 'botright new' }
+set rtp+=/usr/local/opt/fzf
+map <c-b> :BTags<cr>
+map <c-f> :Files<cr>
+
+" Customize fzf colors to match your color scheme
+let g:fzf_colors =
+\ { "fg":      ["fg", "Normal"],
+  \ "bg":      ["bg", "Normal"],
+  \ "hl":      ["fg", "IncSearch"],
+  \ "fg+":     ["fg", "CursorLine", "CursorColumn", "Normal"],
+  \ "bg+":     ["bg", "CursorLine", "CursorColumn"],
+  \ "hl+":     ["fg", "IncSearch"],
+  \ "info":    ["fg", "IncSearch"],
+  \ "border":  ["fg", "Ignore"],
+  \ "prompt":  ["fg", "Comment"],
+  \ "pointer": ["fg", "IncSearch"],
+  \ "marker":  ["fg", "IncSearch"],
+  \ "spinner": ["fg", "IncSearch"],
+  \ "header":  ["fg", "WildMenu"] }
