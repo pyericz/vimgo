@@ -128,7 +128,30 @@ function! s:filter_header(lines) abort
     \ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
   return centered_lines
 endfunction
-let g:startify_custom_header = 'startify#fortune#cowsay()'
+
+let g:ascii = [
+      \"                  ,",
+      \"                 / \\,,_  .'|",
+      \"              ,{{| /}}}}/_.'",
+      \"             }}}}` '{{'  '.",
+      \"           {{{{{    _   ;, \\ ",
+      \"        ,}}}}}}    /o`\\  ` ;)",
+      \"       {{{{{{   /           (",
+      \"       }}}}}}   |            \\ ",
+      \"      {{{{{{{{   \\            \\ ",       
+      \"      }}}}}}}}}   '.__      _  | ",     
+      \"      {{{{{{{{       /`._  (_\\ / ",    
+      \"       }}}}}}'      |    //___/   ",
+      \"       {{{{{'       |     '--'        ",
+      \"        }}}'                         ",
+      \"     "
+      \]                                   
+
+
+let g:startify_custom_header =
+      \ 'map(g:ascii + startify#fortune#boxed(), "\"   \".v:val")'
+
+" let g:startify_custom_header = 'startify#fortune#cowsay()'
 let g:startify_padding_left = 3
 
 " Run Startify with NERDTree!
