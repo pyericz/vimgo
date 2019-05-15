@@ -59,6 +59,11 @@ Switch [CWD](http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 ```
 
+Open Netrw
+```
+map <leader>d :Explore<cr>
+```
+
 ### Plugin Mappings
 
 * BufExplorer
