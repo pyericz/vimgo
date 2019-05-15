@@ -41,7 +41,7 @@ let g:ctrlp_buftag_types = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden=0
 let NERDTreeIgnore = ['\.pyc$', '__pycache__', '\.swp', 'node_modules']
 let g:NERDTreeWinSize=35
@@ -50,6 +50,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
+let NERDTreeHijackNetrw = 0
 
 
 
@@ -115,3 +116,25 @@ let g:fzf_colors =
   \ "marker":  ["fg", "IncSearch"],
   \ "spinner": ["fg", "IncSearch"],
   \ "header":  ["fg", "WildMenu"] }
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Startify
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! s:filter_header(lines) abort
+    let longest_line   = max(map(copy(a:lines), 'strwidth(v:val)'))
+    let centered_lines = map(copy(a:lines),
+        \ 'repeat(" ", (&columns / 2) - (longest_line / 2)) . v:val')
+    return centered_lines
+endfunction
+let g:startify_custom_header = 'startify#fortune#cowsay()'
+let g:startify_padding_left = 3
+
+" Run Startify with NERDTree!
+" autocmd VimEnter *
+"  \   if !argc()
+"  \ |   Startify
+"  \ |   NERDTree
+"  \ |   wincmd w
+"  \ | endif
