@@ -19,6 +19,7 @@ cd ~/.vim_runtime && sh install.sh
 * [vim-multi-cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections.
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot): A collection of language packs for Vim.
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter): Show a git diff in the 'gutter' (sign column). It shows which lines have been added, modified, or removed. You can also preview, stage, and undo individual hunks. The plugin also provides a hunk text object.
+* [vim-fugitive](https://github.com/tpope/vim-fugitive): A Git wrapper so awesome.
 
 
 ## Key Mappings
