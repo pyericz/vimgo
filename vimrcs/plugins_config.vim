@@ -20,7 +20,7 @@ map <leader>o :BufExplorer<cr>
 " => CTRL-P
 """"""""""""""""""""""""""""""
 " let g:ctrlp_working_path_mode = 0
-" 
+"
 " let g:ctrlp_map = '<c-f>'
 " map <leader>j :CtrlP<cr>
 " map <c-b> :CtrlPBuffer<cr>
@@ -56,11 +56,11 @@ let NERDTreeHijackNetrw = 0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => ale 
+" => ale
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
 
-" Disabling highlighting 
+" Disabling highlighting
 let g:ale_set_highlights = 0
 
 " Only run linting when saving the file
@@ -73,7 +73,7 @@ let g:ale_fix_on_save = 1
 " => vim-multiple-cursors
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " let g:multi_cursor_use_default_mapping=0
-" 
+"
 " " Default mapping
 " let g:multi_cursor_start_word_key      = '<C-s>'
 " let g:multi_cursor_select_all_word_key = '<A-s>'
@@ -94,7 +94,7 @@ map <leader>gs :GitGutterSignsToggle<cr>
 map <leader>gb :GitGutterBufferToggle<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => FZF 
+" => FZF
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:fzf_layout = { 'down': '~20%' }
 " let g:fzf_layout = { 'window': 'botright new' }
