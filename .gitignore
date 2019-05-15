@@ -3,4 +3,4 @@ my_configs.vim
 my_plugins/
 tags
 .DS_Store
-plug
+plugged

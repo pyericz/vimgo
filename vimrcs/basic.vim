@@ -1,7 +1,7 @@
 """""""""""""""""""""""""""""
 " => Plug
 """""""""""""""""""""""""""""
-call plug#begin('~/.vim_runtime/plug')
+call plug#begin('~/.vim_runtime/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
@@ -16,6 +16,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-startify'
+Plug 'brooth/far.vim'
 
 call plug#end()
 
