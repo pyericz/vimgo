@@ -95,9 +95,8 @@ map <leader>gb :GitGutterBufferToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => FZF 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:fzf_layout = { 'down': '20%' }
-let g:fzf_layout = { 'window': 'botright new' }
-set rtp+=/usr/local/opt/fzf
+let g:fzf_layout = { 'down': '~20%' }
+" let g:fzf_layout = { 'window': 'botright new' }
 map <c-b> :BTags<cr>
 map <c-f> :Files<cr>
 
