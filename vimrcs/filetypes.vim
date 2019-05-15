@@ -8,3 +8,7 @@ let g:ale_linters = {
 \}
 let g:ale_fixers = {'javascript': ['standard']}
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType vim setlocal ts=2 sts=2 sw=2
