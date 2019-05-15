@@ -16,14 +16,14 @@ cd ~/.vim_runtime && ./install_fonts.sh
 * [pathogen.vim](https://github.com/tpope/vim-pathogen): Manage vim runtimepath.
 * [bufexplorer.zip](https://github.com/vim-scripts/bufexplorer.zip): Easily switch between buffers. Can be opened with `<leader+o>`.
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file, buffer, mru and tag finder. Can be opened with `<Ctrl+F>`. It also maps `<leader+d>` to toggle buffer tags from current file, somewhat like **Goto Symbol...** feature using in Sumblime Text editor. Please install [Universal Tags](https://github.com/universal-ctags/ctags) to enable this feature.
-* [lightline.vim](https://github.com/itchyny/lightline.vim): A light and configurable statusline/tabline for Vim.
 * [NERD Tree](https://github.com/scrooloose/nerdtree): A file system explorer for the Vim editor. Using this plugin, users can visually browse complex directory hierarchies, quickly open files for reading or editing, and perform basic file system operations. Toggle on with `<leader+nn>`.
 * [ale](https://github.com/w0rp/ale): Syntax and lint checking for vim (async).
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out.  Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion. `gcu` uncomments a set of adjacent commented lines.
-* [far.vim](https://github.com/brooth/far.vim): Easier to find and replace text through multiple files. 
+* [far.vim](https://github.com/brooth/far.vim): Easier to find and replace text through multiple files.
 * [vim-multi-cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections.
 * [vim-polyglot](https://github.com/sheerun/vim-polyglot): A collection of language packs for Vim.
 * [vim-fugitive](https://github.com/tpope/vim-fugitive): A Git wrapper so awesome.
+* [vim-airline](https://github.com/vim-airline/vim-airline): Lean & mean status/tabline for vim that's light as air.
 
 
 ## Key Mappings
@@ -56,7 +56,12 @@ Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove 
+map <leader>tm :tabmove
+```
+
+Remove Trailing Space
+```
+map <leader>ts :%s/\s\+$//e<cr>:noh<cr>:w<cr>
 ```
 
 Switch [CWD](http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file) to the directory of the open buffer
