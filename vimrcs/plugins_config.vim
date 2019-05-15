@@ -129,6 +129,8 @@ function! s:filter_header(lines) abort
   return centered_lines
 endfunction
 
+
+
 let g:ascii = [
       \"                  ,",
       \"                 / \\,,_  .'|",
@@ -169,6 +171,8 @@ let g:ascii = [
       \"",
       \]
 let g:ascii = [
+      \"   ",
+      \"   ",
       \"                                                               iiii                          ",      
       \"                                                              i::::i                         ",     
       \'                ,",                                            iiii                          ',  
@@ -185,13 +189,16 @@ let g:ascii = [
       \"     }}}}}}'      |    //___/                v:::::v         i::::::im::::m   m::::m   m::::m",    
       \"     {{{{{'       |     '--'                  v:::v          i::::::im::::m   m::::m   m::::m",    
       \"      }}}'                                     vvv           iiiiiiiimmmmmm   mmmmmm   mmmmmm",    
-      \"   "                                
+      \"   ",
+      \"   ",
+      \"   ",
       \]
 let g:startify_custom_header =
       \ 'map(g:ascii + startify#fortune#boxed(), "\"   \".v:val")'
 
+let g:startify_custom_header = s:filter_header(map(g:ascii, "\"   \".v:val"))
 " let g:startify_custom_header = 'startify#fortune#cowsay()'
-let g:startify_padding_left = 3
+let g:startify_padding_left = &columns / 2 - 45
 
 " Run Startify with NERDTree!
 " autocmd VimEnter *
