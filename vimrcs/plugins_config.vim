@@ -147,7 +147,46 @@ let g:ascii = [
       \"     "
       \]                                   
 
-
+let g:ascii = [
+      \"VVVVVVVV           VVVVVVVVIIIIIIIIIIMMMMMMMM               MMMMMMMM",
+      \"V::::::V           V::::::VI::::::::IM:::::::M             M:::::::M",
+      \"V::::::V           V::::::VI::::::::IM::::::::M           M::::::::M",
+      \"V::::::V           V::::::VII::::::IIM:::::::::M         M:::::::::M",
+      \" V:::::V           V:::::V   I::::I  M::::::::::M       M::::::::::M",
+      \"  V:::::V         V:::::V    I::::I  M:::::::::::M     M:::::::::::M",
+      \"   V:::::V       V:::::V     I::::I  M:::::::M::::M   M::::M:::::::M",
+      \"    V:::::V     V:::::V      I::::I  M::::::M M::::M M::::M M::::::M",
+      \"     V:::::V   V:::::V       I::::I  M::::::M  M::::M::::M  M::::::M",
+      \"      V:::::V V:::::V        I::::I  M::::::M   M:::::::M   M::::::M",
+      \"       V:::::V:::::V         I::::I  M::::::M    M:::::M    M::::::M",
+      \"        V:::::::::V          I::::I  M::::::M     MMMMM     M::::::M",
+      \"         V:::::::V         II::::::IIM::::::M               M::::::M",
+      \"          V:::::V          I::::::::IM::::::M               M::::::M",
+      \"           V:::V           I::::::::IM::::::M               M::::::M",
+      \"            VVV            IIIIIIIIIIMMMMMMMM               MMMMMMMM",
+      \"",
+      \"",
+      \"",
+      \]
+let g:ascii = [
+      \"                                                                 iiii                          ",      
+      \"                                                                i::::i                         ",     
+      \'                  ,",                                            iiii                          ',  
+      \"                 / \\,,_  .'|                                                                  ", 
+      \"              ,{{| /}}}}/_.'          vvvvvvv           vvvvvvviiiiiii    mmmmmmm    mmmmmmm   ",   
+      \"             }}}}` '{{'  '.            v:::::v         v:::::v i:::::i  mm:::::::m  m:::::::mm ",     
+      \"           {{{{{    _   ;, \\            v:::::v       v:::::v   i::::i m::::::::::mm::::::::::m",  
+      \"        ,}}}}}}    /o`\\  ` ;)            v:::::v     v:::::v    i::::i m::::::::::::::::::::::m",  
+      \"       {{{{{{   /           (             v:::::v   v:::::v     i::::i m:::::mmm::::::mmm:::::m",  
+      \"       }}}}}}   |            \\             v:::::v v:::::v      i::::i m::::m   m::::m   m::::m",      
+      \"      {{{{{{{{   \\            \\             v:::::v:::::v       i::::i m::::m   m::::m   m::::m",    
+      \"      }}}}}}}}}   '.__      _  |             v:::::::::v        i::::i m::::m   m::::m   m::::m",      
+      \"      {{{{{{{{       /`._  (_\\ /              v:::::::v        i::::::im::::m   m::::m   m::::m",  
+      \"       }}}}}}'      |    //___/                v:::::v         i::::::im::::m   m::::m   m::::m",    
+      \"       {{{{{'       |     '--'                  v:::v          i::::::im::::m   m::::m   m::::m",    
+      \"        }}}'                                     vvv           iiiiiiiimmmmmm   mmmmmm   mmmmmm",    
+      \"     "                                
+      \]
 let g:startify_custom_header =
       \ 'map(g:ascii + startify#fortune#boxed(), "\"   \".v:val")'
 
