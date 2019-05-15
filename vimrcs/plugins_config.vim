@@ -138,3 +138,24 @@ let g:startify_padding_left = 3
 "  \ |   NERDTree
 "  \ |   wincmd w
 "  \ | endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Airline
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline#extensions#tabline#enabled = 1
+
+" powerline symbols
+if has("gui_running")
+  let g:airline_powerline_fonts = 1
+  let g:airline_left_sep = ''
+  let g:airline_left_alt_sep = ''
+  let g:airline_right_sep = ''
+  let g:airline_right_alt_sep = ''
+  let g:airline_symbols.branch = ''
+  let g:airline_symbols.readonly = ''
+  let g:airline_symbols.linenr = '☰'
+  let g:airline_symbols.maxlinenr = ''
+  let g:airline_symbols.dirty=⚡
+endif
+
+

@@ -1,3 +1,4 @@
+
 """""""""""""""""""""""""""""
 " => Plug
 """""""""""""""""""""""""""""
@@ -6,7 +7,7 @@ call plug#begin('~/.vim_runtime/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'itchyny/lightline.vim'
+" Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/bufexplorer.zip'
 Plug 'w0rp/ale'
 Plug 'tpope/vim-commentary'
@@ -17,6 +18,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-startify'
 Plug 'brooth/far.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
