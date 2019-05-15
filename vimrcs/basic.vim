@@ -58,6 +58,8 @@ set autoread
 " like <leader>w saves the current file
 let mapleader = ","
 
+set foldmethod=syntax
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
