@@ -3,13 +3,8 @@ An alternative vim configuration that I used in daily coding.
 
 ## Install
 ```
-git clone --recursive https://github.com/pyericz/vimrc.git ~/.vim_runtime
+git clone https://github.com/pyericz/vimrc.git ~/.vim_runtime
 cd ~/.vim_runtime && sh install.sh
-```
-
-## Update
-```
-git pull --recurse-submodules
 ```
 
 ## Included Plugins
