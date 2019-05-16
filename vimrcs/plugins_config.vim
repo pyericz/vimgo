@@ -86,14 +86,6 @@ let g:ale_fix_on_save = 1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => GitGutter
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>gg :GitGutterToggle<cr>
-map <leader>gh :GitGutterLineHighlightsToggle<cr>
-map <leader>gs :GitGutterSignsToggle<cr>
-map <leader>gb :GitGutterBufferToggle<cr>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => FZF
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:fzf_layout = { 'down': '~20%' }
@@ -226,5 +218,15 @@ if has("gui_running")
   let g:airline_symbols.maxlinenr = ''
   let g:airline_symbols.dirty=⚡
 endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Fugitive
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>gs :Gstatus<cr>
+map <leader>gc :Gcommit<cr>
+map <leader>gd :Gdiff<cr>
+map <leader>gp :Gpush<cr>
+map <leader>gl :Gpull<cr>
 
 
