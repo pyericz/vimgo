@@ -1,27 +1,3 @@
-
-"""""""""""""""""""""""""""""
-" => Plug
-"""""""""""""""""""""""""""""
-call plug#begin('~/.vim_runtime/plugged')
-
-Plug 'morhetz/gruvbox'
-Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'vim-scripts/bufexplorer.zip'
-Plug 'w0rp/ale'
-Plug 'tpope/vim-commentary'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'sheerun/vim-polyglot'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'mhinz/vim-startify'
-Plug 'brooth/far.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-call plug#end()
-
 """""""""""""""""""""""""""""
 " => Theme
 """""""""""""""""""""""""""""
@@ -34,7 +10,12 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-silent! colorscheme gruvbox
+try
+    colorscheme gruvbox
+catch
+    colorscheme desert
+endtry
+
 set background=dark
 set fillchars=vert:│
 
