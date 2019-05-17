@@ -43,6 +43,7 @@ set autoread
 let mapleader = ","
 
 set foldmethod=syntax
+set nofoldenable
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers

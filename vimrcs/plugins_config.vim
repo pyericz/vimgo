@@ -229,4 +229,4 @@ map <leader>gd :Gdiff<cr>
 map <leader>gp :Gpush<cr>
 map <leader>gl :Gpull<cr>
 
-
+source ~/.vim_runtime/vimrcs/coc_config.vim
