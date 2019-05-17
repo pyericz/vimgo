@@ -172,6 +172,13 @@ else
 endif
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => indentLine
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ignore startify
+let g:indentLine_fileTypeExclude = ['startify']
+
+
 " Run Startify with NERDTree!
 " autocmd VimEnter *
 "  \   if !argc()

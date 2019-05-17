@@ -21,5 +21,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'honza/vim-snippets'
 Plug 'vim-scripts/mru.vim'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
