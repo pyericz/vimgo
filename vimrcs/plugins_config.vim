@@ -123,7 +123,7 @@ endfunction
 
 
 
-let g:ascii = [
+let g:ascii0 = [
       \"                  ,",
       \"                 / \\,,_  .'|",
       \"              ,{{| /}}}}/_.'",
@@ -141,28 +141,7 @@ let g:ascii = [
       \"     "
       \]                                   
 
-let g:ascii = [
-      \"VVVVVVVV           VVVVVVVVIIIIIIIIIIMMMMMMMM               MMMMMMMM",
-      \"V::::::V           V::::::VI::::::::IM:::::::M             M:::::::M",
-      \"V::::::V           V::::::VI::::::::IM::::::::M           M::::::::M",
-      \"V::::::V           V::::::VII::::::IIM:::::::::M         M:::::::::M",
-      \" V:::::V           V:::::V   I::::I  M::::::::::M       M::::::::::M",
-      \"  V:::::V         V:::::V    I::::I  M:::::::::::M     M:::::::::::M",
-      \"   V:::::V       V:::::V     I::::I  M:::::::M::::M   M::::M:::::::M",
-      \"    V:::::V     V:::::V      I::::I  M::::::M M::::M M::::M M::::::M",
-      \"     V:::::V   V:::::V       I::::I  M::::::M  M::::M::::M  M::::::M",
-      \"      V:::::V V:::::V        I::::I  M::::::M   M:::::::M   M::::::M",
-      \"       V:::::V:::::V         I::::I  M::::::M    M:::::M    M::::::M",
-      \"        V:::::::::V          I::::I  M::::::M     MMMMM     M::::::M",
-      \"         V:::::::V         II::::::IIM::::::M               M::::::M",
-      \"          V:::::V          I::::::::IM::::::M               M::::::M",
-      \"           V:::V           I::::::::IM::::::M               M::::::M",
-      \"            VVV            IIIIIIIIIIMMMMMMMM               MMMMMMMM",
-      \"",
-      \"",
-      \"",
-      \]
-let g:ascii = [
+let g:ascii1 = [
       \"   ",
       \"   ",
       \"                                                               iiii                          ",      
@@ -185,12 +164,13 @@ let g:ascii = [
       \"   ",
       \"   ",
       \]
-let g:startify_custom_header =
-      \ 'map(g:ascii + startify#fortune#boxed(), "\"   \".v:val")'
+if &columns >= 100
+  let g:startify_custom_header = s:filter_header(map(g:ascii1, "\"   \".v:val"))
+  let g:startify_padding_left = &columns / 2 - 45
+else
+  let g:startify_custom_header = s:filter_header(map(g:ascii0, "\"   \".v:val"))
+endif
 
-let g:startify_custom_header = s:filter_header(map(g:ascii, "\"   \".v:val"))
-" let g:startify_custom_header = 'startify#fortune#cowsay()'
-let g:startify_padding_left = &columns / 2 - 45
 
 " Run Startify with NERDTree!
 " autocmd VimEnter *
