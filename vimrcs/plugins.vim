@@ -20,5 +20,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'honza/vim-snippets'
+Plug 'vim-scripts/mru.vim'
 
 call plug#end()

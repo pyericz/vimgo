@@ -229,4 +229,14 @@ map <leader>gd :Gdiff<cr>
 map <leader>gp :Gpush<cr>
 map <leader>gl :Gpull<cr>
 
+""""""""""""""""""""""""""""""
+" => MRU plugin
+""""""""""""""""""""""""""""""
+let MRU_Max_Entries = 400
+let MRU_Window_Height = 15
+map <leader>f :MRU<CR>
+
+""""""""""""""""""""""""""""""
+" => coc.nvim 
+""""""""""""""""""""""""""""""
 source ~/.vim_runtime/vimrcs/coc_config.vim
