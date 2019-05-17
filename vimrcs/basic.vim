@@ -44,6 +44,7 @@ let mapleader = ","
 
 set foldmethod=syntax
 set nofoldenable
+set cursorline
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
