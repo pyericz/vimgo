@@ -171,6 +171,7 @@ else
   let g:startify_custom_header = s:filter_header(map(g:ascii0, "\"   \".v:val"))
 endif
 
+highlight StartifyHeader  ctermfg=114 guifg=#569CD6
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => indentLine
@@ -217,25 +218,29 @@ source ~/.vim_runtime/vimrcs/coc_config.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
-let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
-" create a part for server status.
-function! GetServerStatus()
-  return get(g:, 'coc_status', '')
-endfunction
-call airline#parts#define_function('coc', 'GetServerStatus')
-function! AirlineInit()
-  let g:airline_section_a = airline#section#create(['coc'])
-endfunction
-autocmd User AirlineAfterInit call AirlineInit()
+" let g:airline#extensions#tabline#enabled = 1
+" let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
+" let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
+" " create a part for server status.
+" function! GetServerStatus()
+"   return get(g:, 'coc_status', '')
+" endfunction
+" call airline#parts#define_function('coc', 'GetServerStatus')
+" function! AirlineInit()
+"   let g:airline_section_a = airline#section#create(['coc'])
+" endfunction
+" autocmd User AirlineAfterInit call AirlineInit()
 
 " exclude overwrite statusline of list filetype
-let g:airline_exclude_filetypes = ["list"]
-let airline#extensions#coc#error_symbol = 'Error:'
-let airline#extensions#coc#warning_symbol = 'Warning:'
+" let g:airline_exclude_filetypes = ["list"]
+" let airline#extensions#coc#error_symbol = 'Error:'
+" let airline#extensions#coc#warning_symbol = 'Warning:'
 " let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
 " let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
 
 " powerline symbols
 if has("gui_running")
@@ -247,8 +252,8 @@ if has("gui_running")
   let g:airline_symbols.branch = ''
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = '☰'
-  let g:airline_symbols.maxlinenr = ''
-  let g:airline_symbols.dirty = '✗'
+  let g:airline_symbols.maxlinenr = ' '
+  let g:airline_symbols.dirty = ' ✗'
 endif
 
 let g:airline_theme = 'codedark'
