@@ -44,7 +44,13 @@ let mapleader = ","
 
 set foldmethod=syntax
 set nofoldenable
-set cursorline
+
+" show cursor line only on active window
+augroup CursorLine
+    au!
+    au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+    au WinLeave * setlocal nocursorline
+augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
