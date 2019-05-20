@@ -11,9 +11,9 @@ if (has("termguicolors"))
 endif
 
 try
-    colorscheme gruvbox
+  colorscheme codedark
 catch
-    colorscheme desert
+  colorscheme desert
 endtry
 
 set background=dark

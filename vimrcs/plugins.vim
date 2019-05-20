@@ -3,6 +3,7 @@
 """""""""""""""""""""""""""""
 call plug#begin('~/.vim_runtime/plugged')
 
+Plug 'pyericz/vim-code-dark'
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'

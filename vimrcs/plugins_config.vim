@@ -177,6 +177,11 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ignore startify
 let g:indentLine_fileTypeExclude = ['startify']
+let g:indentLine_setColors = 1
+let g:indentLine_char = '│'
+let g:indentLine_first_char = '│'
+let g:indentLine_color_gui = '#434343'
+let g:indentLine_showFirstIndentLevel = 1
 
 
 " Run Startify with NERDTree!
@@ -243,7 +248,7 @@ if has("gui_running")
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = '☰'
   let g:airline_symbols.maxlinenr = ''
-  let g:airline_symbols.dirty=⚡
+  let g:airline_symbols.dirty = '✗'
 endif
 
-
+let g:airline_theme = 'codedark'
