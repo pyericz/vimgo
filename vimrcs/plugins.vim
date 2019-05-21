@@ -1,6 +1,7 @@
 """""""""""""""""""""""""""""
 " => Plug
 """""""""""""""""""""""""""""
+let g:plug_window = 'enew'
 call plug#begin(g:root_path . 'plugged')
 
 Plug 'pyericz/vim-code-dark'
