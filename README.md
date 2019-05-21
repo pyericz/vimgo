@@ -17,7 +17,7 @@ cd ~/.havim && ./install.sh
 
 ## Install Powerline Fonts
 ```
-cd ~/.vim_runtime && ./install_fonts.sh
+cd ~/.havim && ./install_fonts.sh
 ```
 
 ## Included Plugins
