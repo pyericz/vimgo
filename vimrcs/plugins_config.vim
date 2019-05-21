@@ -250,6 +250,9 @@ let g:airline#extensions#tabline#enabled = 1
 " let airline#extensions#coc#stl_format_err = '%E{[%e(#%fe)]}'
 " let airline#extensions#coc#stl_format_warn = '%W{[%w(#%fw)]}'
 
+
+let g:airline_skip_empty_sections = 1
+
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
