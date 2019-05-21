@@ -112,7 +112,12 @@ nmap <silent> <leader>a <Plug>(ale_next_wrap)
 " ==============> fzf <==============
 "
 map <c-b> :BTags<cr>
-map <c-f> :Files<cr>
+" map <c-f> :Files<cr>
+
+"
+" ==============> CtrlP <==============
+"
+let g:ctrlp_map = '<c-f>'
 
 "
 " ==============> Fugitive <==============

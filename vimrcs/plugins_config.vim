@@ -16,11 +16,11 @@ let g:bufExplorerFindActive=1
 let g:bufExplorerSortBy='name'
 
 """"""""""""""""""""""""""""""
-" => CTRL-P
+" => CtrlP
 """"""""""""""""""""""""""""""
-" let g:ctrlp_working_path_mode = 0
-"
-" let g:ctrlp_map = '<c-f>'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
 " map <leader>j :CtrlP<cr>
 " map <c-b> :CtrlPBuffer<cr>
 " map <leader>d :CtrlPBufTag<cr>
