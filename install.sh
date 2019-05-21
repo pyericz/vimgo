@@ -4,6 +4,7 @@ echo 'Installing...'
 set -e
 cd ~/.havim
 echo 'set runtimepath+=~/.havim
+source ~/.havim/vimrcs/path.vim
 source ~/.havim/vimrcs/plugins.vim
 source ~/.havim/vimrcs/basic.vim
 source ~/.havim/vimrcs/filetypes.vim

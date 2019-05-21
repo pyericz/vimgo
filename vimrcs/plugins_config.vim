@@ -224,7 +224,8 @@ let MRU_Window_Height = 15
 """"""""""""""""""""""""""""""
 " => coc.nvim 
 """"""""""""""""""""""""""""""
-source ~/.havim/vimrcs/coc_config.vim
+let s:coc_source = 'source ' . g:root_path . 'vimrcs/coc_config.vim'
+exec s:coc_source
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Airline

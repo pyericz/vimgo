@@ -1,7 +1,7 @@
 """""""""""""""""""""""""""""
 " => Plug
 """""""""""""""""""""""""""""
-call plug#begin('~/.havim/plugged')
+call plug#begin(g:root_path . 'plugged')
 
 Plug 'pyericz/vim-code-dark'
 Plug 'morhetz/gruvbox'
