@@ -120,8 +120,8 @@ map <c-f> :Files<cr>
 map ;s :Gstatus<cr>
 map ;c :Gcommit<cr>
 map ;d :Gdiff<cr>
-map ;h :Gpush<cr>
-map ;l :Gpull<cr>
+map ;f :Gpush<cr>
+map ;b :Gpull<cr>
 
 "
 " ==============> MRU <==============
