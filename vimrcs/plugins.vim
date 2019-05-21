@@ -1,7 +1,7 @@
 """""""""""""""""""""""""""""
 " => Plug
 """""""""""""""""""""""""""""
-call plug#begin('~/.vim_runtime/plugged')
+call plug#begin('~/.havim/plugged')
 
 Plug 'pyericz/vim-code-dark'
 Plug 'morhetz/gruvbox'
