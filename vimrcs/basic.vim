@@ -38,9 +38,6 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
-let mapleader = ","
 
 set foldmethod=syntax
 set nofoldenable
@@ -51,22 +48,6 @@ augroup CursorLine
     au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
     au WinLeave * setlocal nocursorline
 augroup END
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Moving around, tabs, windows and buffers
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
-map <c-space> ?
-
-" Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-
-" Switch CWD to the directory of the open buffer
-map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -98,9 +79,6 @@ set hlsearch
 set lazyredraw
 set regexpengine=1
 
-" Disable highlight when <leader><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
-
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
@@ -124,18 +102,6 @@ set formatoptions-=t " do not automatically wrap text when typing
 set ai "Auto indent
 set si "Smart indent
 
-" Useful mappings for managing tabs
-map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove
-
-" remove trailing space
-map <leader>ts :%s/\s\+$//e<cr>:noh<cr>:w<cr>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => netrw
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" netrw
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
-map <leader>d :Explore<cr>

@@ -14,7 +14,6 @@ let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 let g:bufExplorerFindActive=1
 let g:bufExplorerSortBy='name'
-map <leader>o :BufExplorer<cr>
 
 """"""""""""""""""""""""""""""
 " => CTRL-P
@@ -47,9 +46,6 @@ let NERDTreeIgnore = ['\.pyc$', '__pycache__', '\.swp', 'node_modules']
 let g:NERDTreeWinSize=35
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-map <leader>nn :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark<Space>
-map <leader>nf :NERDTreeFind<cr>
 let NERDTreeHijackNetrw = 0
 
 
@@ -58,7 +54,6 @@ let NERDTreeHijackNetrw = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ale
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <silent> <leader>a <Plug>(ale_next_wrap)
 
 " Disabling highlighting
 let g:ale_set_highlights = 0
@@ -90,8 +85,6 @@ let g:ale_fix_on_save = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:fzf_layout = { 'down': '~20%' }
 " let g:fzf_layout = { 'window': 'botright new' }
-map <c-b> :BTags<cr>
-map <c-f> :Files<cr>
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
@@ -222,21 +215,11 @@ let g:indentLine_showFirstIndentLevel = 1
 "  \ | endif
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Fugitive
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>gs :Gstatus<cr>
-map <leader>gc :Gcommit<cr>
-map <leader>gd :Gdiff<cr>
-map <leader>gp :Gpush<cr>
-map <leader>gl :Gpull<cr>
-
 """"""""""""""""""""""""""""""
 " => MRU plugin
 """"""""""""""""""""""""""""""
 let MRU_Max_Entries = 400
 let MRU_Window_Height = 15
-map <leader>f :MRU<CR>
 
 """"""""""""""""""""""""""""""
 " => coc.nvim 
