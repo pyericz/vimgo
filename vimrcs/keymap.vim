@@ -27,7 +27,7 @@ map <leader>tm :tabmove
 map <leader>ts :%s/\s\+$//e<cr>:noh<cr>:w<cr>
 
 " open netrw
-map <space> :Explore<cr>
+" map <space> :Explore<cr>
 
 
 """""""""""""""""""""""""""""""""""
@@ -117,11 +117,11 @@ map <c-f> :Files<cr>
 "
 " ==============> Fugitive <==============
 "
-map <leader>gs :Gstatus<cr>
-map <leader>gc :Gcommit<cr>
-map <leader>gd :Gdiff<cr>
-map <leader>gp :Gpush<cr>
-map <leader>gl :Gpull<cr>
+map ;s :Gstatus<cr>
+map ;c :Gcommit<cr>
+map ;d :Gdiff<cr>
+map ;h :Gpush<cr>
+map ;l :Gpull<cr>
 
 "
 " ==============> MRU <==============
