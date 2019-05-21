@@ -28,6 +28,9 @@ set history=500
 " show line number
 set nu
 
+" Set 1 line to the cursor - when moving vertically using j/k
+set so=1
+
 " Set utf8 encoding
 set encoding=utf8
 
