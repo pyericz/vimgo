@@ -23,5 +23,6 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'honza/vim-snippets'
 Plug 'vim-scripts/mru.vim'
 Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-vinegar'
 
 call plug#end()

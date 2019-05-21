@@ -27,11 +27,11 @@ map <leader>tm :tabmove
 map <leader>ts :%s/\s\+$//e<cr>:noh<cr>:w<cr>
 
 " open netrw
-" map <space> :Explore<cr>
+" map - :Explore<cr>
 
 
 """""""""""""""""""""""""""""""""""
-" Plugins 
+" Plugins
 """""""""""""""""""""""""""""""""""
 
 "
