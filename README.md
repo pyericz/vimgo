@@ -11,8 +11,8 @@ An alternative vim configuration that I used in daily coding.
 
 ## Install
 ```
-git clone https://github.com/pyericz/vimrc.git ~/.vim_runtime
-cd ~/.vim_runtime && ./install.sh
+git clone https://github.com/pyericz/havim.git ~/.havim
+cd ~/.havim && ./install.sh
 ```
 
 ## Install Powerline Fonts
