@@ -46,7 +46,7 @@ set foldmethod=syntax
 set nofoldenable
 
 " Command tab completion menu
-set wildmode=longest,list,full
+" set wildmode=longest,list,full
 set wildmenu
 
 " show cursor line only on active window
