@@ -274,3 +274,9 @@ endif
 let g:airline_symbols.dirty = ' ✗'
 
 let g:airline_theme = 'codedark'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-polyglot
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:polyglot_disabled = ['markdown']
