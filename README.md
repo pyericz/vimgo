@@ -15,11 +15,10 @@ git clone https://github.com/pyericz/havim.git ~/.havim
 cd ~/.havim && ./install.sh
 ```
 
-## Install Powerline Fonts
-
 ## Included Plugins
 ### Theme
-Havim uses `vim-code-dark` as its default color scheme. `vim-code-dark` is a dark color scheme for Vim heavily inspired by the look of the Dark+ scheme of Visual Studio Code.
+Havim uses [vim-code-dark](https://github.com/pyericz/vim-code-dark) as its default color scheme. `vim-code-dark` is a dark color scheme for Vim heavily inspired by the look of the Dark+ scheme of Visual Studio Code.
+
 In addition, I recommend using powerline fonts, especially `Source Code Pro for Powerline`. You can install powerline fonts as follows:
 ```
 cd ~/.havim && ./install_fonts.sh
@@ -30,33 +29,33 @@ cd ~/.havim && ./install_fonts.sh
 
 ### File/Buffer Explorer
 
-* [Vinegar](https://github.com/tpope/vim-vinegar): Combine with netrw to create a nice file system explorer. Vinegar is my first choice to explore file system. You can toggle it on with `-`.
-* [NERDTree](https://github.com/scrooloose/nerdtree): In case you don't like Vinegar, NERDTree is your second choice.
+* [vinegar](https://github.com/tpope/vim-vinegar): Combine with netrw to create a nice file system explorer. vinegar is my first choice to explore file system. You can toggle it on with `-`.
+* [NERDTree](https://github.com/scrooloose/nerdtree): In case you don't like vinegar, NERDTree is your second choice.
 * [BufExplorer](https://github.com/vim-scripts/bufexplorer.zip): Easily switch between buffers. Can be opened with `<leader+o>`.
 * [MRU](https://github.com/vim-scripts/mru.vim): Most recently used buffer. Can be opened with `<leader+f>`.
 
 ### Fuzzy Finding
 * [CtrlP](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file, buffer, mru and tag finder. Can be opened with `<Ctrl+F>`.
-* [Fzf](https://github.com/junegunn/fzf.vim): Fzf wrapper for vim. Use `<Ctrl-B>` to open `BTags`, which is somewhat like **Goto Symbol...** feature using in Sumblime Text editor. If you had installed [rg](https://github.com/BurntSushi/ripgrep), with fzf you can search `rg` results with `:Rg [PATTERN]`.
+* [fzf](https://github.com/junegunn/fzf.vim): Fzf wrapper for vim. Use `<Ctrl-B>` to open `BTags`, which is somewhat like **Goto Symbol...** feature using in Sumblime Text editor. If you had installed [rg](https://github.com/BurntSushi/ripgrep), with fzf you can search `rg` results with `:Rg [PATTERN]`.
 
 ### Lint
-* [Ale](https://github.com/w0rp/ale): Syntax and lint checking for vim (async).
+* [ale](https://github.com/w0rp/ale): Syntax and lint checking for vim (async).
 
 ### Git
 * [vim-fugitive](https://github.com/tpope/vim-fugitive): A Git wrapper so awesome.
 
 ### Auto Completion
-* [Coc.nvim](https://github.com/neoclide/coc.nvim): Intellisense engine for vim8 & neovim, full language server protocol support as VSCode.
-* [Snippets](https://github.com/honza/vim-snippets): Snippets files for various programming languages.
+* [coc.nvim](https://github.com/neoclide/coc.nvim): Intellisense engine for vim8 & neovim, full language server protocol support as VSCode.
+* [snippets](https://github.com/honza/vim-snippets): Snippets files for various programming languages.
 
 ### Languages
-* [Polyglot](https://github.com/sheerun/vim-polyglot): A collection of language packs for Vim.
+* [polyglot](https://github.com/sheerun/vim-polyglot): A collection of language packs for Vim.
 
 ### Status Line
-* [Airline](https://github.com/vim-airline/vim-airline): Lean & mean status/tabline for vim that's light as air.
+* [airline](https://github.com/vim-airline/vim-airline): Lean & mean status/tabline for vim that's light as air.
 
 ### Misc
-* [Commentary](https://github.com/tpope/vim-commentary): Comment stuff out.  Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion. `gcu` uncomments a set of adjacent commented lines.
+* [commentary](https://github.com/tpope/vim-commentary): Comment stuff out.  Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion. `gcu` uncomments a set of adjacent commented lines.
 * [Multiple Cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections.
 * [IndentLine](https://github.com/Yggdroot/indentLine): Display the indention levels with thin vertical lines.
 
