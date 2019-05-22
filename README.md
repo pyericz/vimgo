@@ -28,8 +28,8 @@ cd ~/.havim && ./install_fonts.sh
 
 ### File/Buffer Explorer
 
-* [vinegar.vim](https://github.com/tpope/vim-vinegar): Combine with netrw to create a nice file system explorer. vinegar.vim is my first choice to explore file system. You can toggle it on with `-`.
-* [NERDTree](https://github.com/scrooloose/nerdtree): In case you don't like Vinegar, NERDTree is your second choice.
+* [vinegar](https://github.com/tpope/vim-vinegar): Combine with netrw to create a nice file system explorer. vinegar is my first choice to explore file system. You can toggle it on with `-`.
+* [NERDTree](https://github.com/scrooloose/nerdtree): In case you don't like vinegar, NERDTree is your second choice.
 * [BufExplorer](https://github.com/vim-scripts/bufexplorer.zip): Easily switch between buffers. Can be opened with `<leader+o>`.
 * [MRU](https://github.com/vim-scripts/mru.vim): Most recently used buffer. Can be opened with `<leader+f>`.
 
