@@ -36,10 +36,8 @@ cd ~/.havim && ./install_fonts.sh
 
 ## Key Mappings
 
+### Basic
 ```vim
-"""""""""""""""""""""""""""""""""""
-" Basic
-"""""""""""""""""""""""""""""""""""
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
 let mapleader = ","
@@ -64,15 +62,10 @@ map <leader>tm :tabmove
 
 " remove trailing space
 map <leader>ts :%s/\s\+$//e<cr>:noh<cr>:w<cr>
+```
 
-" open netrw
-" map - :Explore<cr>
-
-
-"""""""""""""""""""""""""""""""""""
-" Plugins
-"""""""""""""""""""""""""""""""""""
-
+### Plugins
+```vim
 "
 " ==============> coc <==============
 "
@@ -146,12 +139,10 @@ map <leader>nf :NERDTreeFind<cr>
 "
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
 
-
 "
 " ==============> fzf <==============
 "
 map <c-b> :BTags<cr>
-" map <c-f> :Files<cr>
 
 "
 " ==============> CtrlP <==============
