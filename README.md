@@ -17,7 +17,8 @@ cd ~/.havim && ./install.sh
 
 ## Included Plugins
 ### Theme
-Havim uses `vim-code-dark` as its default color scheme. `vim-code-dark` is a dark color scheme for Vim heavily inspired by the look of the Dark+ scheme of Visual Studio Code.
+Havim uses [vim-code-dark](https://github.com/pyericz/vim-code-dark) as its default color scheme. `vim-code-dark` is a dark color scheme for Vim heavily inspired by the look of the Dark+ scheme of Visual Studio Code.
+
 In addition, I recommend using powerline fonts, especially `Source Code Pro for Powerline`. You can install powerline fonts as follows:
 ```
 cd ~/.havim && ./install_fonts.sh
