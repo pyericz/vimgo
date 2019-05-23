@@ -103,7 +103,7 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
-set nowrap           " do not automatically wrap on load
+set wrap linebreak nolist
 set formatoptions-=t " do not automatically wrap text when typing
 
 set ai "Auto indent
