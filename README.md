@@ -54,6 +54,9 @@ cd ~/.havim && ./install_fonts.sh
 ### Status Line
 * [airline](https://github.com/vim-airline/vim-airline): Lean & mean status/tabline for vim that's light as air.
 
+### Yank
+* [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack): Maintains a history of previous yanks, changes and deletes
+
 ### Misc
 * [commentary](https://github.com/tpope/vim-commentary): Comment stuff out.  Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion. `gcu` uncomments a set of adjacent commented lines.
 * [Multiple Cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections.

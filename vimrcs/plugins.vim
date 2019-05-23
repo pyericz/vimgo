@@ -48,4 +48,7 @@ Plug 'honza/vim-snippets'
 " Indent Guide Line
 Plug 'Yggdroot/indentLine'
 
+" Yank
+Plug 'maxbrunsfeld/vim-yankstack'
+
 call plug#end()
