@@ -6,7 +6,7 @@
  ╚████╔╝ ██║██║ ╚═╝ ██║╚██████╔╝╚██████╔╝
   ╚═══╝  ╚═╝╚═╝     ╚═╝ ╚═════╝  ╚═════╝ 
 ```
-# Havim
+# Vimgo
 An alternative vim configuration that I used in daily coding.
 
 ## Install
