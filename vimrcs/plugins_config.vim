@@ -158,7 +158,7 @@ let g:ascii1 = [
       \"   ",
       \]
 
-let g:ascii1 = [
+let s:ascii = [
       \"                                       ",
       \"                                       ",
       \"                                       ",
@@ -175,11 +175,11 @@ let g:ascii1 = [
       \"                                       ",
       \"                                       ",
       \]
+let g:startify_custom_header = s:filter_header(map(s:ascii, "\"   \".v:val"))
 if &columns >= 100
-  let g:startify_custom_header = s:filter_header(map(g:ascii1, "\"   \".v:val"))
   let g:startify_padding_left = &columns / 2 - 45
 else
-  let g:startify_custom_header = s:filter_header(map(g:ascii0, "\"   \".v:val"))
+  let g:startify_padding_left = 5
 endif
 
 highlight StartifyHeader  ctermfg=114 guifg=#569CD6
