@@ -1,20 +1,20 @@
 #!/bin/sh
 echo 'Installing...'
 
-set -e
-cd ~/.havim
-echo 'set runtimepath+=~/.havim
-source ~/.havim/vimrcs/path.vim
-source ~/.havim/vimrcs/plugins.vim
-source ~/.havim/vimrcs/basic.vim
-source ~/.havim/vimrcs/filetypes.vim
-source ~/.havim/vimrcs/plugins_config.vim
-source ~/.havim/vimrcs/extended.vim
-source ~/.havim/vimrcs/keymap.vim
+VIM_ROOT=$HOME/.vimgo
+
+echo "set runtimepath+=$VIM_ROOT
+source $VIM_ROOT/vimrcs/path.vim
+source $VIM_ROOT/vimrcs/plugins.vim
+source $VIM_ROOT/vimrcs/basic.vim
+source $VIM_ROOT/vimrcs/filetypes.vim
+source $VIM_ROOT/vimrcs/plugins_config.vim
+source $VIM_ROOT/vimrcs/extended.vim
+source $VIM_ROOT/vimrcs/keymap.vim
 try
-source ~/.havim/my_configs.vim
+source $VIM_ROOT/my_configs.vim
 catch
-endtry' > ~/.vimrc
+endtry" > ~/.vimrc
 
 vim +PlugInstall +qall
 
