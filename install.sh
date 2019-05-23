@@ -3,6 +3,8 @@ echo 'Installing...'
 
 VIM_ROOT=$HOME/.vimgo
 
+echo "let g:root_path = '$VIM_ROOT/'" > $VIM_ROOT/vimrcs/path.vim
+
 echo "set runtimepath+=$VIM_ROOT
 source $VIM_ROOT/vimrcs/path.vim
 source $VIM_ROOT/vimrcs/plugins.vim
