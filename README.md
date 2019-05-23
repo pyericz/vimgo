@@ -192,4 +192,4 @@ map ;b :Gpull<cr>
 map <leader>f :MRU<CR>
 ```
 ## License
-[MIT License](https://github.com/pyericz/vimrc/blob/master/LICENSE)
+[MIT License](https://github.com/pyericz/vimgo/blob/master/LICENSE)
