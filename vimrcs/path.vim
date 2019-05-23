@@ -1,1 +1,1 @@
-let g:root_path = '~/.havim/'
+let g:root_path = '~/.vimgo/'
