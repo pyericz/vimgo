@@ -21,7 +21,7 @@ Havim uses [vim-code-dark](https://github.com/pyericz/vim-code-dark) as its defa
 
 In addition, I recommend using powerline fonts, especially `Source Code Pro for Powerline`. You can install powerline fonts as follows:
 ```
-cd ~/.havim && ./install_fonts.sh
+cd ~/.vimgo && ./install_fonts.sh
 ```
 
 ### Start Screen
