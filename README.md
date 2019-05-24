@@ -7,9 +7,13 @@
   ╚═══╝  ╚═╝╚═╝     ╚═╝ ╚═════╝  ╚═════╝ 
 ```
 # Vimgo
-Vimgo is an alternative vim configuration that I used in daily coding. It is still in progress, but will become better and better.
+Vimgo is a vim configuration that I used in daily coding. It is still in progress, but will become better and better.
+
+## Prerequisite
+Vimgo uses [vim-airline](https://github.com/vim-airline/vim-airline). For the nice looking powerline symbols to appear, you will need to install [powerline fonts](https://github.com/powerline/fonts). Installation instructions can be found in this [documentation](https://github.com/powerline/fonts#installation).
 
 ## Install
+To install vimgo, simply do following in your terminal: 
 ```
 git clone https://github.com/pyericz/vimgo.git ~/.vimgo
 cd ~/.vimgo && ./install.sh
@@ -27,13 +31,6 @@ cd ~/.vimgo && ./install.sh
 <img width="1280" alt="Fullscreen_2019_5_24__11_22_AM" src="https://user-images.githubusercontent.com/15732419/58300871-e782cc80-7e16-11e9-822c-1c46d65b76a1.png">
 
 ## Included Plugins
-### Theme And Fonts
-Havim uses [vim-code-dark](https://github.com/pyericz/vim-code-dark) as its default color scheme. `vim-code-dark` is a dark color scheme for Vim heavily inspired by the look of the Dark+ scheme of Visual Studio Code.
-
-In addition, I recommend using [powerline fonts](https://github.com/powerline/fonts), especially `Source Code Pro for Powerline`. You can install them as follows:
-```
-cd ~/.vimgo && ./install_fonts.sh
-```
 
 ### Start Screen
 * [Startify](https://github.com/mhinz/vim-startify): Provides a start screen for Vim and Neovim.
@@ -63,7 +60,7 @@ cd ~/.vimgo && ./install_fonts.sh
 * [polyglot](https://github.com/sheerun/vim-polyglot): A collection of language packs for Vim.
 
 ### Status Line
-* [airline](https://github.com/vim-airline/vim-airline): Lean & mean status/tabline for vim that's light as air.
+* [vim-airline](https://github.com/vim-airline/vim-airline): Lean & mean status/tabline for vim that's light as air.
 
 ### Yank
 * [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack): Maintains a history of previous yanks, changes and deletes
