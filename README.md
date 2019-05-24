@@ -61,6 +61,7 @@ cd ~/.vimgo && ./install_fonts.sh
 * [commentary](https://github.com/tpope/vim-commentary): Comment stuff out.  Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion. `gcu` uncomments a set of adjacent commented lines.
 * [Multiple Cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections.
 * [IndentLine](https://github.com/Yggdroot/indentLine): Display the indention levels with thin vertical lines.
+* [Auto Pairs](https://github.com/jiangmiao/auto-pairs): Insert or delete brackets, parens, quotes in pair.
 
 ## Key Mappings
 

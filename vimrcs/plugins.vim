@@ -51,4 +51,7 @@ Plug 'Yggdroot/indentLine'
 " Yank
 Plug 'maxbrunsfeld/vim-yankstack'
 
+" Auto Pair
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
