@@ -29,8 +29,8 @@ map <leader>ts :%s/\s\+$//e<cr>:noh<cr>:w<cr>
 " open netrw
 " map - :Explore<cr>
 
-" yank all
-nmap <leader>y :%y+<cr>
+" yank to system clipboard 
+noremap <leader>y "+y
 
 "
 " Visual mode pressing * or # searches for the current selection
@@ -173,5 +173,3 @@ endfunction
 function! CmdLine(str)
     call feedkeys(":" . a:str)
 endfunction
-
-
