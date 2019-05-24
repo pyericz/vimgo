@@ -7,7 +7,7 @@
   ╚═══╝  ╚═╝╚═╝     ╚═╝ ╚═════╝  ╚═════╝ 
 ```
 # Vimgo
-An alternative vim configuration that I used in daily coding.
+Vimgo is an alternative vim configuration that I used in daily coding. It is still in progress, but will become better and better.
 
 ## Install
 ```
