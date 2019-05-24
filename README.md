@@ -27,7 +27,7 @@ cd ~/.vimgo && ./install.sh
 <img width="1280" alt="Fullscreen_2019_5_24__11_22_AM" src="https://user-images.githubusercontent.com/15732419/58300871-e782cc80-7e16-11e9-822c-1c46d65b76a1.png">
 
 ## Included Plugins
-### Theme
+### Theme And Fonts
 Havim uses [vim-code-dark](https://github.com/pyericz/vim-code-dark) as its default color scheme. `vim-code-dark` is a dark color scheme for Vim heavily inspired by the look of the Dark+ scheme of Visual Studio Code.
 
 In addition, I recommend using [powerline fonts](https://github.com/powerline/fonts), especially `Source Code Pro for Powerline`. You can install them as follows:
