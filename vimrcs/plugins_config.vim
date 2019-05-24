@@ -182,7 +182,7 @@ else
   let g:startify_padding_left = 5
 endif
 
-highlight StartifyHeader  ctermfg=114 guifg=#569CD6
+highlight StartifyHeader  ctermfg=75 guifg=#569CD6
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => indentLine
