@@ -15,6 +15,17 @@ git clone https://github.com/pyericz/vimgo.git ~/.vimgo
 cd ~/.vimgo && ./install.sh
 ```
 
+## Screenshots
+<img width="1280" alt="Fullscreen_2019_5_24__11_15_AM" src="https://user-images.githubusercontent.com/15732419/58300837-ce7a1b80-7e16-11e9-8065-912fc8fd8e70.png">
+
+<img width="1280" alt="Fullscreen_2019_5_24__11_18_AM" src="https://user-images.githubusercontent.com/15732419/58300849-d8038380-7e16-11e9-8edc-85b936460e17.png">
+
+<img width="1280" alt="Fullscreen_2019_5_24__11_19_AM" src="https://user-images.githubusercontent.com/15732419/58300852-dc2fa100-7e16-11e9-8cdb-f97c5eb589ba.png">
+
+<img width="1280" alt="Fullscreen_2019_5_24__11_20_AM" src="https://user-images.githubusercontent.com/15732419/58300864-e487dc00-7e16-11e9-9ff1-933b5381a336.png">
+
+<img width="1280" alt="Fullscreen_2019_5_24__11_22_AM" src="https://user-images.githubusercontent.com/15732419/58300871-e782cc80-7e16-11e9-822c-1c46d65b76a1.png">
+
 ## Included Plugins
 ### Theme
 Havim uses [vim-code-dark](https://github.com/pyericz/vim-code-dark) as its default color scheme. `vim-code-dark` is a dark color scheme for Vim heavily inspired by the look of the Dark+ scheme of Visual Studio Code.
