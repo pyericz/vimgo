@@ -32,6 +32,9 @@ map <leader>ts :%s/\s\+$//e<cr>:noh<cr>:w<cr>
 " yank to system clipboard
 noremap <leader>y "+y
 
+" paste from clipboard
+noremap <leader>p "+p
+
 "
 " Visual mode pressing * or # searches for the current selection
 " Super useful! From an idea by Michael Naumann
