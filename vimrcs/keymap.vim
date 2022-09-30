@@ -29,7 +29,7 @@ map <leader>ts :%s/\s\+$//e<cr>:noh<cr>:w<cr>
 " open netrw
 " map - :Explore<cr>
 
-" yank to system clipboard 
+" yank to system clipboard
 noremap <leader>y "+y
 
 "
@@ -51,8 +51,8 @@ vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
 
 " Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
 " Coc only does snippet and additional edit on confirm.
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-inoremap <expr> <tab> pumvisible() ? "\<C-y>" : "\<tab>"
+" inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" inoremap <expr> <tab> pumvisible() ? "\<C-y>" : "\<tab>"
 
 " Use `[c` and `]c` to navigate diagnostics
 nmap <silent> [c <Plug>(coc-diagnostic-prev)
@@ -64,16 +64,19 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Use K to show documentation in preview window
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call ShowDocumentation()<CR>
 
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
   else
-    call CocAction('doHover')
+    call feedkeys('K', 'in')
   endif
 endfunction
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
 xmap <leader>a  <Plug>(coc-codeaction-selected)
@@ -128,7 +131,7 @@ map <c-b> :BTags<cr>
 vnoremap <silent> rg :call VisualSelection('rg', '')<CR>
 
 " Open Rg and put the cursor in the right position
-map <leader>g :Rg 
+map <leader>g :Rg
 
 
 "

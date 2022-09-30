@@ -29,7 +29,7 @@ if g:os == "Darwin"
 elseif g:os == "Windows"
   set gfn=Source\ Code\ Pro\ for\ Powerline:h12,Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h11
 elseif g:os == "Linux"
-  set gfn=Source\ Code\ Pro\ for\ Powerline\ 12,:Hack\ 14,Source\ Code\ Pro\ 12,Bitstream\ Vera\ Sans\ Mono\ 11
+  set gfn=Source\ Code\ Pro\ for\ Powerline\ 11,:Hack\ 12,Source\ Code\ Pro\ 11,Bitstream\ Vera\ Sans\ Mono\ 11
 endif
 
 " hide ~ symbol at the end of buffer

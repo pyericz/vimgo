@@ -47,7 +47,8 @@ let g:NERDTreeWinSize=35
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 let NERDTreeHijackNetrw = 0
-
+" autocmd BufEnter NERD_tree_* | execute 'normal R'
+" autocmd BufWritePost * NERDTreeFocus | execute 'normal R'
 
 
 
