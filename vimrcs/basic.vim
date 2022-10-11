@@ -2,14 +2,6 @@
 " => Theme
 """""""""""""""""""""""""""""
 syntax enable
-" for vim 7
-set t_Co=256
-
-try
-  colorscheme codedark
-catch
-  colorscheme desert
-endtry
 
 " Use a line cursor within insert mode and a block cursor everywhere else.
 "

@@ -266,3 +266,15 @@ let g:airline_symbols.colnr = ', Col '
 let g:airline_symbols.dirty = ' ✗'
 let g:airline_theme = 'codedark'
 
+
+""""""""""""""""""""""""""""""""""""""
+" => color sceme
+""""""""""""""""""""""""""""""""""""""
+"" for vim 7
+set t_Co=256
+
+try
+  colorscheme codedark
+catch
+  colorscheme desert
+endtry
