@@ -6,12 +6,14 @@ autocmd FileType javascript setlocal ts=2 sts=2 sw=2
 let g:ale_linters = {
 \   'javascript': ['standard'],
 \   'cpp': ['clang-format'],
-\   'c': ['clang-format']
+\   'c': ['clang-format'],
+\   'cuda': ['clang-format']
 \}
 let g:ale_fixers = {
 \   'javascript': ['standard'],
 \   'cpp': ['clang-format'],
-\   'c': ['clang-format']
+\   'c': ['clang-format'],
+\   'cuda': ['clang-format']
 \}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

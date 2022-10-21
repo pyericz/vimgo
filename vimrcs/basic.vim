@@ -106,7 +106,8 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
-set wrap linebreak nolist
+" set wrap linebreak nolist
+set nowrap
 set formatoptions-=t " do not automatically wrap text when typing
 
 set ai "Auto indent
@@ -119,3 +120,5 @@ set si "Smart indent
 " => vim-polyglot
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:polyglot_disabled = ['markdown']
+
+autocmd BufEnter * lcd %:p:h
