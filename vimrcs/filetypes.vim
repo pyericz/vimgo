@@ -7,13 +7,15 @@ let g:ale_linters = {
 \   'javascript': ['standard'],
 \   'cpp': ['clang-format'],
 \   'c': ['clang-format'],
-\   'cuda': ['clang-format']
+\   'cuda': ['clang-format'],
+\   'rust': ['analyzer', 'cargo']
 \}
 let g:ale_fixers = {
 \   'javascript': ['standard'],
 \   'cpp': ['clang-format'],
 \   'c': ['clang-format'],
-\   'cuda': ['clang-format']
+\   'cuda': ['clang-format'],
+\   'rust': ['rustfmt']
 \}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
