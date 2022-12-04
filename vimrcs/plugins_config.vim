@@ -278,3 +278,16 @@ try
 catch
   colorscheme desert
 endtry
+
+
+"""""""""""""""""
+" => polyglot
+"""""""""""""""""
+autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
+
+
+
+"""""""""""""""""
+" => auto pairs
+"""""""""""""""""
+let g:AutoPairsMapCR = 0
