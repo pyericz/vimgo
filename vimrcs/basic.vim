@@ -34,6 +34,9 @@ set so=1
 " Set utf8 encoding
 set encoding=utf8
 
+" Enable mouse wheel scrolling
+set mouse=a
+
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
